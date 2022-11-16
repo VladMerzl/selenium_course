@@ -1,2 +1,2 @@
-# selenium_course
-Selenium learning and tests
+# selenium_test
+Some learning materials about Selenium
