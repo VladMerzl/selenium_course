@@ -14,13 +14,14 @@ try:
 
     x = browser.find_element(By.ID, "input_value").text
     answer = str(calc(int(x)))
-
     button = browser.find_element(By.TAG_NAME, "button")
 
     browser.find_element(By.ID, "answer").send_keys(answer)
-    browser.find_element(By.CSS_SELECTOR, "for=robotCheckbox").click()
+    browser.find_element(By.ID, "robotCheckbox").click()
+
     browser.execute_script("return arguments[0].scrollIntoView(true);", button)
-    browser.find_element(By.CSS_SELECTOR, "for=robotsRule").click()
+
+    browser.find_element(By.ID, "robotsRule").click()
 
     button.click()
 finally:
