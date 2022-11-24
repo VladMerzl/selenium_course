@@ -20,7 +20,6 @@ try:
     browser.find_element(By.ID, "robotCheckbox").click()
 
     browser.execute_script("return arguments[0].scrollIntoView(true);", button)
-
     browser.find_element(By.ID, "robotsRule").click()
 
     button.click()
