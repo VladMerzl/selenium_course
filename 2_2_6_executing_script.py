@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 
 def calc(a):
-    return math.log(abs(12*math.sin(a)))
+    return str(math.log(abs(12*math.sin(int(x)))))
 
 
 try:
